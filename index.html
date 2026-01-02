@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mortgage Calculator</h1>
+      <form id="mortgage">
+        <main>
+          <div class="input-field">
+            <input
+              type="number"
+              class="autocomplete"
+              id="homeValue"
+              placeholder="Home Value"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="number"
+              class="autocomplete"
+              id="downPayment"
+              placeholder="Down Payment"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="number"
+              class="autocomplete"
+              id="loanAmount"
+              readonly,
+              placeholder="Loan Amount"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              class="autocomplete"
+              id="interestRate"
+              placeholder="Interest Rate"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="number"
+              class="autocomplete"
+              id="loanDuration"
+              placeholder="Loan Duration (years)"
+            />
+          </div>
+        </main>
+        <footer>
+          <button class="btn" type="onClick">Calculate</button>
+          <button class="btn" type="reset">Calculate</button>
+          <div class="btn">Mon. Payment: <span id="monthlyPayment"></span></div>
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>

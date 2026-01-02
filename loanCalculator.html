@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paskolos skaičiuoklė</title>
+    <script src="/loanscript.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Paskolos skaičiuoklė</h1>
+      <form id="mortgage">
+        <main>
+          <div class="input-field">
+            <input type="number" id="loanAmount" placeholder="Paskolos dydis" />
+            <br />
+          </div>
+          <div class="input-field">
+            <p>Palūkanų norma: <output id="valueInterests"></output></p>
+            <input
+              type="range"
+              min="1.8"
+              max="19"
+              step="0.1"
+              id="interestRate"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="number"
+              class="autocomplete"
+              id="loanDuration"
+              placeholder="Paskolos trukmė (metais)"
+            />
+            <br />
+          </div>
+        </main>
+        <footer>
+          <button class="btn" type="submit">Skaičiuoti</button>
+          <button class="btn" type="reset">Išvalyti</button>
+          <br />
+          <div class="btn">Mokėti kas mėnesį: <span id="monthlyPayment"></span></div>
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>
